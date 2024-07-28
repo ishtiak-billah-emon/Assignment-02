@@ -308,6 +308,112 @@ body{
   margin-top: 50px;
 }
 
+
+/* BMI SECTION */
+
+
+
+.bmi-card{
+  color: white;
+  background-color: rgb(34, 34, 34);
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 48px;
+}
+
+.bmi-chart{
+  text-align: center;
+}
+
+.bmi-chart-title{
+  font-size: 2rem;
+  font-weight: 900;
+  color:rgb(255, 255, 255);
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+th, td{
+  border: 1px solid #444 ;
+  padding:15px 20px;
+  text-align: left;
+}
+
+th{
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+
+.bmi-form{
+  flex-direction: column;
+}
+input,
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+}
+
+.calculate-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ff6347;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.calculate-btn:hover {
+  background: #ff4500;
+}
+
+                                      /* Meet Our Team */
+
+.meet-our-team-container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 88px;
+}
+
+.meet-our-team{
+  max-width: 670px;
+}
+.mot-des{
+  margin-top: 14px;
+  margin-bottom: 58px;
+}
+.team-img{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.team-img img{
+  width: 100%;
+}
+.person-img{
+  width: 326px;
+  height: 272px;
+  border-radius: 18px;
+}
+
 /* MOBILE DEVICE: */
 
 @media (max-width:576px)  {
@@ -323,9 +429,9 @@ body{
   .header-description{
     max-width: 352px;
   }
-    .navbar .nav-list{
+  .navbar .nav-list{
       visibility: hidden;
-    }
+  }
 
 
 
@@ -367,6 +473,18 @@ body{
     .running-join-btn{
       width: 300px;
 
+    }
+
+
+    /* Meet our team */
+
+    .meet-our-team-container{
+      max-width: 400px;
+    }
+
+    .team-img{
+      margin-top: 30px;
+      grid-template-columns: repeat(1, 1fr);
     }
 
 
