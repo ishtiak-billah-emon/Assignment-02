@@ -7,54 +7,58 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="inter-font">
-    <header class="header hidden">
+    <header class="header">
       <nav class="navbar display-flex">
-        <h3 class="brand">Fitness</h3>
-        <ul class="nav-list display-flex">
+        <h3 class="brand-title">Fitness</h3>
+        <ul class="nav-items display-flex">
           <li class="nav-item active"><a href="#">Home</a></li>
           <li class="nav-item"><a href="#">Service</a></li>
           <li class="nav-item"><a href="#">Contact</a></li>
           <li class="nav-item"><a href="#">About</a></li>
         </ul>
       </nav>
-      <section class="display-flex header-Info">
-        <section class="header-description display-flex">
-          <h1 class="title">
-            Get body in <span class="highlight">shape</span> & stay healthy
+      <section class="banner display-flex">
+        <div class="banner-info">
+          <h1 class="banner-title">
+            Get body in <span class="highlight-shape">shape</span> & stay
+            healthy
           </h1>
-          <p class="description">
+          <p class="banner-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor totam
             quis porro omnis cupiditate. Quia vel, enim debitis veniam, quam
             incidunt repellendus deleniti eius itaque a fugiat ut illum quas!
           </p>
           <div class="buttons">
-            <button class="primary-button">Join Club Now!</button>
-            <button id="download-btn" class="primary-button">
-              Download App
+            <button id="joinnow-btn1" class="primary-btn">
+              Join Club Now!
             </button>
+            <button id="joinnow-btn2" class="primary-btn">Join Now!</button>
+            <button id="download-btn" class="primary-btn">Download App</button>
           </div>
-        </section>
-        <div class="trainer-image">
-          <img src="images/Images 2.png" alt="" srcset="" />
         </div>
-        <button class="workout-video">
-          <h3 class="number">500+</h3>
-          <p class="type">Free Workout Videos</p>
-        </button>
+
+        <div class="banner-img">
+          <img
+            src="images/Images 2.png"
+            alt="A triner is doing workout"
+            class="model-image"
+          />
+          <button class="workout-video">
+            <h3 class="number">500+</h3>
+            <p class="type">Free Workout Videos</p>
+          </button>
+          <button class="video-tutorials display-flex hidden">
+            <div class="circle"></div>
+            <div class="info">
+              <h3 class="number">350+</h3>
+              <h3 class="type">Video tutorial</h3>
+            </div>
+          </button>
+        </div>
       </section>
     </header>
 
     <main class="main">
-      <button class="video-tutorials display-flex hidden">
-        <div class="circle"></div>
-        <div class="info">
-          <h3 class="number">350+</h3>
-          <h3 class="type">Video tutorial</h3>
-        </div>
-      </button>
-
-      <!-- Change your habit section -->
-
       <section class="habit-container display-flex">
         <div class="habit-text">
           <h2 class="habit-title">Change Your Habits</h2>
@@ -107,7 +111,7 @@
             regardless of income or access to a gym. With hundreds of
             professional workouts.
           </p>
-          <button class="primary-button running-join-btn">Join Now</button>
+          <button class="primary-btn running-join-btn">Join Now</button>
         </div>
 
         <img

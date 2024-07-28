@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap");
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -7,205 +8,185 @@
   font-style: normal;
 }
 
-body{
-  font-family: "Inter";
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
+/* Shared style */
 
-/* Shared Desgin */
-
-.display-flex{
+.display-flex {
   display: flex;
 }
 
-.common-title{
-    font-size: 3rem;
-    font-weight: 900;
-    color: white;
-}
-
-.text-light-gray{
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.875rem;
-}
-
-.primary-button{
-  background-color: rgb(230, 83, 60);
-  color: rgb(255,255,255);
-  border: none;
-  border-radius: 46px; 
-  padding: 16px 40px 16px 40px;
-  font-size: 1.125rem;
-  font-weight: 600;  
-  max-width: 224px;
-}
-
-#download-btn{
-  background-color: transparent;
-  border: 1px solid white;
-}
-
-
-/* Header */
-
-.header{
-  /* background: linear-gradient(180deg, rgba(17, 17, 17, 1) 0%, rgba(119, 119, 119, 0) 50%, rgba(17, 17, 17, 1) 100%); */
-  background-color: rgba(32,32,32,255);
-  padding-left: 250px;
-  padding-top: 60px;
-  padding-right: 200px;  
-}
-
-/* .navbar, .header-Info{
-  margin: 0 auto;
-} */
-.header-Info{
-  margin-top: 100px;  
-  align-items: center;
-}
-
-
-.header-description{
-  max-width:600px;
-  flex-direction: column;
-  gap: 28px;
-}
-.header-description .title{
-  font-size: 4.875rem;
+.common-title {
+  font-size: 3rem;
   font-weight: 900;
   color: white;
 }
 
-.header-description .highlight{
-  font-family: "Miama";
-  font-style: italic;
-  Font-weight: 400;
-  Font-size: 78pxpx;
-
-}
-
-.header-description .description{
+.text-light-gray {
   color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
 }
 
+.brand-title {
+  font-style: italic;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+}
 
-.trainer-image img{
+.primary-btn {
+  background-color: rgb(230, 83, 60);
+  border: none;
+  border-radius: 42px;
+  font-size: 1.125rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 16px 40px 16px 40px;
+  text-align: center;
+}
+
+/* Header style */
+
+.header {
+  background-color: #222222;
+}
+
+/* Navbar design */
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 20rem;
+}
+.navbar li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 16px;
+}
+
+.navbar .nav-items {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 10px 0;
+}
+
+.nav-items .active a {
+  background-color: rgb(230, 83, 60);
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.nav-item {
+  margin-right: 2rem;
+}
+
+/* Banner */
+
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 320px;
+}
+.banner-info {
+  max-width: 520px;
+}
+.banner-title {
+  color: rgb(255, 255, 255);
+  font-size: 4.875rem;
+  font-weight: 900;
+}
+
+.banner-title .highlight-shape {
+  font-family: "Playwrite MX", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+.banner-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  margin: 28px auto;
+}
+
+#download-btn {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  margin-left: 14px;
+}
+#joinnow-btn2 {
+  display: none;
+}
+
+.banner-img img {
   width: 100%;
+  position: relative;
 }
-
-.trainer-image{
-  margin-left: 200px;
-}
-
-
 
 /* STAT BUTTONS */
 
-.video-tutorials{
+.video-tutorials {
   background-color: rgba(48, 48, 48, 0.54);
   padding: 12px 18px;
   align-items: center;
   border: none;
   border-radius: 8px;
   max-width: 206px;
-  margin-left: 950px;
-  margin-top: -150px;
   backdrop-filter: blur(20px);
-  
+  position: absolute;
+  top: 600px;
+  right: 585px;
 }
-.circle{
+.circle {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: rgb(230, 83, 60);
 }
 
-.info{
+.info {
   padding-left: 12px;
   text-align: left;
 }
 
-.video-tutorials .number{
+.video-tutorials .number {
   font-size: 1.5rem;
   font-weight: 900;
   color: white;
 }
 
-.video-tutorials .type{
+.video-tutorials .type {
   margin-top: 5px;
   font-size: 1rem;
   color: rgba(239, 237, 232, 0.65);
 }
 
-
-.workout-video{
+.workout-video {
   padding: 12px 18px;
   max-width: 193px;
   border: none;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
   text-align: left;
-  margin-top: -200px;
-  margin-left: -110px; 
+  position: absolute;
+  top: 300px;
+  right: 280px;
 }
-.workout-video .number{
+
+.workout-video .number {
   color: rgb(255, 255, 255);
   font-size: 2.5rem;
   font-weight: 900;
-
 }
 
-.workout-video .type{
+.workout-video .type {
   color: rgba(255, 255, 255, 0.65);
-  font-size: .82rem;
-}
-
-/* Nav Bar */
-
-.brand{
-  font-size: 2.25rem;
-  font-weight: 800;
-  color:rgb(230, 83, 60);
-}
-.navbar{
-  justify-content: space-between;
-  align-items: center; 
-}
-.navbar li {
- list-style: none;
-}
-
-.nav-list{
-  padding: 12px 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 39px;
-}
-.navbar .nav-item{
-  text-decoration: none;
-  color:white;
-}
-.nav-item{
- margin-right: 2rem; 
-}
-.nav-item a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-}
-.nav-item.active a{
-    background-color: #f04d41;
-    border-radius: 16px;
-    color: #fff;
-}
-
-
-.hidden{
-  /* visibility: hidden; */
-  display: none;
+  font-size: 0.82rem;
 }
 
 /* Change your habit */
@@ -218,44 +199,45 @@ body{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-top: 100px;
 }
-.habit-container{
+.habit-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.habit-text{
+.habit-text {
   text-align: center;
   max-width: 750px;
 }
 
-.habit-title{
+.habit-title {
   font-size: 3rem;
   font-weight: 900;
   color: white;
 }
 
-.habit-description{
+.habit-description {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.875rem;
   margin-top: 16px;
 }
 
-.habit-list{
+.habit-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap:40px;
+  gap: 40px;
   margin-top: 60px;
 }
 
-.round-img{
+.round-img {
   height: 180px;
   width: 180px;
   border-radius: 50%;
 }
 
-.habit-card{
+.habit-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,23 +245,22 @@ body{
   text-align: center;
 }
 
-.habit-card-title{
+.habit-card-title {
   color: rgb(239, 237, 232);
   font-size: 1.125rem;
   font-weight: 600;
   margin-top: 30px;
 }
 
-.habit-card-description{
+.habit-card-description {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.875rem;
   margin-top: 8px;
 }
 
-
 /* Run an Extra section */
 
-.run-container{
+.run-container {
   max-width: 1060px;
   border-radius: 18px;
   background: rgb(34, 34, 34);
@@ -288,7 +269,7 @@ body{
   margin-top: 100px;
 }
 
-.run-text{
+.run-text {
   flex-direction: column;
   max-width: 443px;
   padding: 32px;
@@ -296,24 +277,20 @@ body{
 }
 
 .running-man-img {
-
-  max-width: 366px;  
+  max-width: 366px;
   width: 100%;
-  height: auto; 
+  height: auto;
   border-radius: 18px;
   padding: 32px;
 }
 
-.running-join-btn{
+.running-join-btn {
   margin-top: 50px;
 }
 
-
 /* BMI SECTION */
 
-
-
-.bmi-card{
+.bmi-card {
   color: white;
   background-color: rgb(34, 34, 34);
   margin-top: 80px;
@@ -322,36 +299,35 @@ body{
   padding: 48px;
 }
 
-.bmi-chart{
+.bmi-chart {
   text-align: center;
 }
 
-.bmi-chart-title{
+.bmi-chart-title {
   font-size: 2rem;
   font-weight: 900;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
-
-table{
+table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 50px;
 }
-th, td{
-  border: 1px solid #444 ;
-  padding:15px 20px;
+th,
+td {
+  border: 1px solid #444;
+  padding: 15px 20px;
   text-align: left;
 }
 
-th{
+th {
   font-size: 1rem;
   font-weight: 500;
   color: rgb(255, 255, 255);
 }
 
-
-.bmi-form{
+.bmi-form {
   flex-direction: column;
 }
 input,
@@ -378,9 +354,9 @@ select {
   background: #ff4500;
 }
 
-                                      /* Meet Our Team */
+/* Meet Our Team */
 
-.meet-our-team-container{
+.meet-our-team-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -389,14 +365,14 @@ select {
   margin-bottom: 88px;
 }
 
-.meet-our-team{
+.meet-our-team {
   max-width: 670px;
 }
-.mot-des{
+.mot-des {
   margin-top: 14px;
   margin-bottom: 58px;
 }
-.team-img{
+.team-img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 18px;
   max-width: 1060px;
@@ -406,46 +382,43 @@ select {
   gap: 20px;
   padding: 20px;
 }
-.team-img img{
+.team-img img {
   width: 100%;
 }
-.person-img{
+.person-img {
   width: 326px;
   height: 272px;
   border-radius: 18px;
 }
 
-
 /* Footer section */
 
-.footer{
- background-color: rgba(26,26,26,255);
- padding-top: 66px;
+.footer {
+  background-color: rgba(26, 26, 26, 255);
+  padding-top: 66px;
 }
 
-.footer-information{
-  justify-content: space-around; 
-  gap:48px;
+.footer-information {
+  justify-content: space-around;
+  gap: 48px;
 }
 
-.brand-details{
+.brand-details {
   max-width: 443px;
 }
 
-.brand-title{
+.brand-title {
   font-size: 4.375rem;
   font-weight: 800;
-  color:rgb(230, 83, 60);
+  color: rgb(230, 83, 60);
 }
 
-.getStarted{
+.getStarted {
   font-size: 2rem;
   font-weight: 700;
   color: rgb(255, 255, 255);
   margin-bottom: 40px;
 }
-
-
 
 .info-card .item {
   list-style: none;
@@ -454,92 +427,119 @@ select {
   margin-bottom: 20px;
 }
 
-
-.copyright{
+.copyright {
   margin-top: 80px;
   text-align: center;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
-.copyright-text{
+.copyright-text {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   padding-top: 36px;
+  padding-bottom: 36px;
 }
-
 
 /* MOBILE DEVICE: */
 
-@media (max-width:576px)  {
+@media (max-width: 576px) {
+  .header {
+    /* padding-left: 20px; */
+  }
+  .navbar .nav-items {
+    display: none;
+  }
+  .navbar {
+    padding: 0;
+    padding: 52px 20px;
+  }
 
-  .header{
-    margin-left: 0;
+  .banner {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .banner-title {
+    font-size: 2.25rem;
+    max-width: 285px;
+  }
+
+  #joinnow-btn1 {
+    display: none;
+  }
+  #joinnow-btn2 {
+    display: inline;
+  }
+  .buttons {
+    display: flex;
+  }
+  .video-tutorials {
+    position: absolute;
+    top: 56.25rem;
+    right: 20.25rem;
+  }
+
+  .workout-video {
+    top: 40rem;
+    right: 3rem;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+
+  /* Change your habits */
+
+  .habit-description {
+    /* padding: 0 16px; */
+    margin: 10px auto;
+  }
+  .habit-list {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 50px;
+  }
+  .habit-card {
+    margin-top: 70px;
+    transform: scale(1.25);
+  }
+
+  /* Running an extra mile */
+
+  .run-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .running-join-btn {
+    margin-top: 24px;
+  }
+
+  .run-text {
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+  .running-man-img {
+    margin-top: -145px;
+  }
+
+  .running-join-btn {
+    width: 300px;
+  }
+
+  /* Meet our team */
+
+  .meet-our-team-container {
+    max-width: 400px;
+  }
+
+  .team-img {
+    margin-top: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Footer */
+  .footer-information {
+    flex-direction: column;
     padding-left: 20px;
   }
-
-  .header-info{
-    flex-direction: column;
-  }
-  .header-description{
-    max-width: 352px;
-  }
-  .navbar .nav-list{
-      visibility: hidden;
-  }
-
-
-
-    /* Change your habits */
-
-    .habit-description{
-      /* padding: 0 16px; */
-      margin: 10px auto;
-    }
-    .habit-list{
-      grid-template-columns: repeat(1, 1fr);
-      margin-top: 50px;
-    }
-    .habit-card{
-      margin-top: 70px;
-      transform: scale(1.25);
-    }
-
-    /* Running an extra mile */
-
-    .run-container{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .running-join-btn{
-      margin-top: 24px;
-    }
-
-    .run-text{
-      align-items: center;
-      justify-content: center;
-      max-width: 300px;
-    }
-    .running-man-img{
-      margin-top: -145px;
-    }
-
-    .running-join-btn{
-      width: 300px;
-
-    }
-
-
-    /* Meet our team */
-
-    .meet-our-team-container{
-      max-width: 400px;
-    }
-
-    .team-img{
-      margin-top: 30px;
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-
-
 }
