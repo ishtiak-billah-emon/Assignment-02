@@ -3,33 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fitness Gym</title>
+    <title>GYM</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="inter-font">
     <header class="header">
       <nav class="navbar display-flex">
-        <h3 class="brand-title">Fitness</h3>
+        <h2 class="brand-title">Fitness</h2>
         <ul class="nav-items display-flex">
-          <li class="nav-item active"><a href="#">Home</a></li>
+          <li class="nav-item active-btn"><a href="#">Home</a></li>
           <li class="nav-item"><a href="#">Service</a></li>
           <li class="nav-item"><a href="#">Contact</a></li>
           <li class="nav-item"><a href="#">About</a></li>
         </ul>
+        <img class="hamnurg-icon" src="images/hamburg.png" alt="" srcset="">
       </nav>
+
       <section class="banner display-flex">
-        <div class="banner-info">
+        <div class="banner-info display-flex">
           <div class="banner-text">
-          <h1 class="banner-title">
-            Get body in <span class="highlight-shape">shape</span> & stay
-            healthy
-          </h1>
-          <p class="banner-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor totam
-            quis porro omnis cupiditate. Quia vel, enim debitis veniam, quam
-            incidunt repellendus deleniti eius itaque a fugiat ut illum quas!
-          </p>
-        </div>
+            <h1 class="banner-title">
+              Get body in <span class="highlight-shape">shape</span> & stay
+              healthy
+            </h1>
+            <p class="text-light-gray banner-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              totam quis porro omnis cupiditate. Quia vel, enim debitis veniam,
+              quam incidunt repellendus deleniti eius itaque a fugiat ut illum
+              quas!
+            </p>
+          </div>
           <div class="buttons">
             <button id="joinnow-btn1" class="primary-btn">
               Join Club Now!
@@ -167,28 +170,29 @@
           </div>
           <div class="bmi-form display-flex">
             <h2 class="bmi-chart-title">Calculate your BMI</h2>
-            <p class="text-light-gray bmi-description" >
+            <p class="text-light-gray bmi-description">
               We believe fitness should be accessible to everyone, everywhere,
               regardless of income or access to a gym.
             </p>
             <div class="input-box">
-              <input type="text" name="Height" id="" placeholder="Height/cm">
-              <input type="text" name="Weight" id="" placeholder="Weight/kg">
-              <input type="text" name="age" id="" placeholder="Age">
-              <select  required>
+              <input type="text" name="Height" id="" placeholder="Height/cm" />
+              <input type="text" name="Weight" id="" placeholder="Weight/kg" />
+              <input type="text" name="age" id="" placeholder="Age" />
+              <select required>
                 <option value="" disabled selected hidden>SEX</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
               </select>
               <select required class="activity-factor">
-                <option value="" disabled selected>Select an activity factor</option>
+                <option value="" disabled selected>
+                  Select an activity factor
+                </option>
                 <option value="lightly_active">Lightly Active</option>
                 <option value="moderately_active">Moderately Active</option>
                 <option value="very_active">Very Active</option>
               </select>
-             
-            </div> 
-             <button  class="calculate-btn">Calculate</button>
+            </div>
+            <button class="calculate-btn">Calculate</button>
           </div>
         </div>
       </section>
@@ -196,25 +200,66 @@
       <!--  Our Plans -->
 
       <section class="Our-plans">
-        <h2 class="common-title our-plans-title">Our <span class="highlight-plans">Plans</span></h2>
+        <h2 class="common-title our-plans-title">
+          Our <span class="highlight-plans">Plans</span>
+        </h2>
         <div class="plan-cards">
           <div class="plan-card">
             <h4 class="plan-name">BASIC</h4>
-            <h3 class="plan-price">$100/Month</h3>  
-            <ul class="plan-features">         
-              <li class="plan-feature-name">  <img class="tick-icon" src="images/checkmark.png"> Access to all gym equipment</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Free locker usage</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  One personal training session per month</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Basic nutritional guidance</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Access to group fitness classes</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Access to steam room</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Priority booking for classes</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Access to member-only workshops and events</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   24/7 gym access</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Complimentary gym merchandise</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Monthly health and wellness consultations</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Access to exclusive premium member lounge</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Complimentary massage therapy sessions</li>
+            <h3 class="plan-price">$100/Month</h3>
+            <ul class="plan-features">
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                all gym equipment
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Free locker
+                usage
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> One
+                personal training session per month
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Basic
+                nutritional guidance
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" /> Access
+                to group fitness classes
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" /> Access
+                to steam room
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" />
+                Priority booking for classes
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" /> Access
+                to member-only workshops and events
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" /> 24/7
+                gym access
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" />
+                Complimentary gym merchandise
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" />
+                Monthly health and wellness consultations
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" /> Access
+                to exclusive premium member lounge
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" />
+                Complimentary massage therapy sessions
+              </li>
             </ul>
             <button class="primary-btn plan-btn">Join Now</button>
           </div>
@@ -222,19 +267,58 @@
             <h4 class="plan-name">PRO</h4>
             <h3 class="plan-price">$150/Month</h3>
             <ul class="plan-features">
-              <li class="plan-feature-name">  <img class="tick-icon" src="images/checkmark.png">  Access to all gym equipment</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Free locker usage</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Two personal training sessions per month</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Basic nutritional guidance</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Access to group fitness classes</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Access to steam room</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Priority booking for classes</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Access to member-only workshops and events</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   24/7 gym access</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Complimentary gym merchandise</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Monthly health and wellness consultations</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Access to exclusive premium member lounge</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark-gray.png">   Complimentary massage therapy sessions</li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                all gym equipment
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Free locker
+                usage
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Two
+                personal training sessions per month
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Basic
+                nutritional guidance
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                group fitness classes
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                steam room
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Priority
+                booking for classes
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                member-only workshops and events
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" /> 24/7
+                gym access
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" />
+                Complimentary gym merchandise
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" />
+                Monthly health and wellness consultations
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" /> Access
+                to exclusive premium member lounge
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark-gray.png" />
+                Complimentary massage therapy sessions
+              </li>
             </ul>
             <button class="primary-btn plan-btn">Join Now</button>
           </div>
@@ -242,27 +326,63 @@
             <h4 class="plan-name">PREMIUM</h4>
             <h3 class="plan-price">$300/Month</h3>
             <ul class="plan-features">
-              <li class="plan-feature-name">  <img class="tick-icon" src="images/checkmark.png">  Access to all gym equipment</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Free locker usage</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Unlimited personal training sessions</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Personalized nutrition plans</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Access to group fitness classes</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Access to steam room</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Priority booking for classes</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Access to member-only workshops and events</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  24/7 gym access</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Complimentary gym merchandise</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Monthly health and wellness consultations</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Access to exclusive premium member lounge</li>
-              <li class="plan-feature-name"><img class="tick-icon" src="images/checkmark.png">  Complimentary massage therapy sessions</li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                all gym equipment
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Free locker
+                usage
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Unlimited
+                personal training sessions
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" />
+                Personalized nutrition plans
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                group fitness classes
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                steam room
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Priority
+                booking for classes
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                member-only workshops and events
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> 24/7 gym
+                access
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" />
+                Complimentary gym merchandise
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Monthly
+                health and wellness consultations
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" /> Access to
+                exclusive premium member lounge
+              </li>
+              <li class="plan-feature-name">
+                <img class="tick-icon" src="images/checkmark.png" />
+                Complimentary massage therapy sessions
+              </li>
             </ul>
             <button class="primary-btn plan-btn">Join Now</button>
           </div>
         </div>
-
       </section>
-
-
 
       <!-- Meet Our Team -->
       <section class="meet-our-team-container display-flex">
@@ -274,43 +394,43 @@
           </p>
         </div>
 
-       <div class="trainer-details">
-        <div class="trainer-1 trainer" >
-          <h3 class="trainer-name">Jerome Bell</h3>
-          <p class="text-light-gray trainer-role">Trainer</p>
+        <div class="trainer-details">
+          <div class="trainer-1 trainer">
+            <h3 class="trainer-name">Jerome Bell</h3>
+            <p class="text-light-gray trainer-role">Trainer</p>
+          </div>
+          <div class="trainer-2 trainer">
+            <!-- <img src="images/trainer2.png" alt="" class="person-img" /> -->
+            <h3 class="trainer-name">Cameron William</h3>
+            <p class="text-light-gray trainer-role">Trainer</p>
+          </div>
+          <div class="trainer-3 trainer">
+            <!-- <img src="images/trainer3.png" alt="" class="person-img" /> -->
+            <h3 class="trainer-name">Darrel Steward</h3>
+            <p class="text-light-gray trainer-role">Trainer</p>
+          </div>
+          <div class="trainer-4 trainer">
+            <!-- <img src="images/trainer4.png" alt="" class="person-img" /> -->
+            <h3 class="trainer-name">Dianne Russell</h3>
+            <p class="text-light-gray trainer-role">Trainer</p>
+          </div>
+          <div class="trainer-5 trainer">
+            <!-- <img src="images/trainer5.png" alt="" class="person-img" /> -->
+            <h3 class="trainer-name">Cody Fisher</h3>
+            <p class="text-light-gray trainer-role">Trainer</p>
+          </div>
+          <div class="trainer-6 trainer">
+            <!-- <img src="images/trainer6.png" alt="" class="person-img" />  -->
+            <h3 class="trainer-name">Theresa Webb</h3>
+            <p class="text-light-gray trainer-role">Trainer</p>
+          </div>
         </div>
-        <div class="trainer-2 trainer">
-          <!-- <img src="images/trainer2.png" alt="" class="person-img" /> -->
-          <h3 class="trainer-name">Cameron William</h3>
-          <p class="text-light-gray trainer-role">Trainer</p>
-        </div>
-        <div class="trainer-3 trainer">
-          <!-- <img src="images/trainer3.png" alt="" class="person-img" /> -->
-          <h3 class="trainer-name">Darrel Steward</h3>
-          <p class="text-light-gray trainer-role">Trainer</p>
-        </div>
-        <div class="trainer-4 trainer">
-          <!-- <img src="images/trainer4.png" alt="" class="person-img" /> -->
-          <h3 class="trainer-name">Dianne Russell</h3>
-          <p class="text-light-gray trainer-role">Trainer</p>
-        </div>
-        <div class="trainer-5 trainer">
-          <!-- <img src="images/trainer5.png" alt="" class="person-img" /> -->
-          <h3 class="trainer-name">Cody Fisher</h3>
-          <p class="text-light-gray trainer-role">Trainer</p>
-        </div>
-        <div class="trainer-6 trainer">
-          <!-- <img src="images/trainer6.png" alt="" class="person-img" />  -->
-          <h3 class="trainer-name">Theresa Webb</h3>
-          <p class="text-light-gray trainer-role">Trainer</p>
-        </div>
-       </div>
       </section>
     </main>
     <footer class="footer">
       <section class="footer-information display-flex">
         <div class="brand-details">
-          <h2 class="brand-title">Fitness</h2>
+          <h2 class="brand-title-2">Fitness</h2>
           <p class="text-light-gray">
             We believe fitness should be accessible to everyone, everywhere,
             regardless of income or access to a gym. With hundreds of
